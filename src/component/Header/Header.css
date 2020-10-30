@@ -1,0 +1,85 @@
+main{
+    background-color: rgb(255, 255, 255);
+    height: calc(100%);
+    margin-top: 30px;
+    border-radius: 5px;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.nav-ul, ul{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0rem!important;
+    padding: 0!important;
+    display:flex
+}
+.nav-ul li{
+    padding: 25px 10px;
+    transition: 0.3s ease-in-out;
+}
+.nav-ul li:first-child:hover {
+    background-color: rgb(12, 71, 160);
+  
+}
+.nav-ul li:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgb(8, 57, 131);
+  
+}
+.nav-ul li:first-child a{
+    color:rgb(248, 248, 248)!important;
+  
+}
+.nav-ul li a{
+    color:rgb(41, 40, 39)!important;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+.nav-ul li a:hover{
+    color:rgb(230, 115, 7)!important;
+    text-decoration: none;
+}
+.nav-ul li a:focus{
+    color:rgb(230, 115, 7)!important;
+    text-decoration: none;
+}
+.social-ul li{
+    align-items:center;
+    margin: 0 5px;
+    padding: 25px 0px;
+}
+.social-ul li:last-child a{
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+.social-ul li:last-child:hover a{
+    color:white!important;
+    background-color: rgb(18, 90, 199);
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+.hire-me{
+    color:white!important;
+    background-color: rgb(18, 90, 199);
+    border-radius: 5px!important;
+    
+}
+.hire-me:hover{
+    background-color: rgb(4, 41, 95)!important;
+    
+}
+.social-ul li a{
+    color: black;
+}
+.social-ul li a:hover{
+    color: rgb(7, 119, 153);
+    text-decoration: none;
+}
+

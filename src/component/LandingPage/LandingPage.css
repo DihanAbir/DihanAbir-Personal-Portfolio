@@ -1,0 +1,24 @@
+.wrapper{
+    width: 90%!important;
+    padding-top: 65px;
+}
+.col-description{
+    height: 90vh;
+    margin: auto;
+}
+.col-sidebar{
+    background-color: rgb(247, 247, 247);
+    height: 90vh;
+    margin: auto;
+    border-radius: 5px;
+}
+.col-3{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer{
+    background-color:rgb(255, 251, 251);
+    position: fixed;
+    bottom:0px;
+    width:100%;
+}

@@ -1,0 +1,29 @@
+.profile-picture{
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.img{
+    width: 100%!important;
+}
+
+.dot{
+    font-size:16;
+    font-weight: bold;
+    color: rgb(4, 75, 122)
+}
+.linkedinLink{
+    text-decoration: none;
+    color: rgb(20, 66, 134);
+    font-size: 18px;
+}
+.linkedinLink:hover{
+    text-decoration: none;
+}
+.btn a{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(4, 57, 104)!important;
+}
+.btn a:hover{
+    text-decoration: none;
+}
