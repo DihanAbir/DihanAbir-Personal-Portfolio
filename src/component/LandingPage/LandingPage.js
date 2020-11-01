@@ -6,25 +6,25 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
-    <div>
-      <div className="wrapper mx-auto">
-        <div className="row mx-auto">
-          <div className="col-3 col-sidebar">
-            <Sidebar />
-          </div>
-          <div className="col-9 col-description">
-            <section>
-              <Header />
-            </section>
+    <>
+      <div className="landing-app mx-auto">
+        <div className="wrapper mx-auto">
+          <div className="row mx-auto">
+            <div className="col-xl-3 col-sm-12 col-sidebar">
+              <Sidebar />
+            </div>
+            <div className="col-xl-9 col-sm-12 col-description">
+              <section>
+                <Header />
+              </section>
+              <section className="mt-5">
+                <Footer />
+              </section>
+            </div>
           </div>
         </div>
       </div>
-      <div className="row footer mx-auto border">
-        <div className="col-12">
-          <Footer />
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

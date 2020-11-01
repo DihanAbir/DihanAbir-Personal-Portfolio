@@ -1,3 +1,6 @@
+.sidebar-maindiv{
+    position: relative;
+}
 .profile-picture{
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -9,21 +12,37 @@
 .dot{
     font-size:16;
     font-weight: bold;
-    color: rgb(4, 75, 122)
+    color: #796bf2;
 }
 .linkedinLink{
     text-decoration: none;
-    color: rgb(20, 66, 134);
+    color: #796bf2;
     font-size: 18px;
 }
 .linkedinLink:hover{
     text-decoration: none;
 }
+.btn{
+    background-color: #796bf2!important;
+}
+.btn:hover{
+    background-color: #604ff3!important;
+}
 .btn a{
     font-size: 18px;
     font-weight: bold;
-    color: rgb(4, 57, 104)!important;
+    color: #fff
 }
 .btn a:hover{
     text-decoration: none;
+    color: #fff
+}
+.styles_typicalWrapper__1_Uvh{
+    font-size:20px;
+    color: #686868;
+}
+.styles_typicalWrapper__1_Uvh::after{
+    content:'';
+    color: #796bf2;
+    width: 10px!important;
 }

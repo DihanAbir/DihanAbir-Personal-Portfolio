@@ -35,7 +35,7 @@ const About = () => {
 
   return (
     <div>
-      <h4>About Me</h4>
+      <h4 className="border-custome">About Me</h4>
       <p className="m-5">
         Started earnest brother believe an exposed so. Me he believing daughters
         if forfeited at furniture. Age again and stuff downs spoke. Late hour
@@ -53,11 +53,11 @@ const About = () => {
         endeavor she judgment interest the met. For she surrounded motionless
         fat resolution may.
       </p>
-      <h4>My Services</h4>
+      <h4 className="border-custome">My Services</h4>
       <div className="row container ">
         {Projects.map((project) => (
-          <div className="col-3  mx-auto my-5">
-            <div className="border p-4">
+          <div className="col-xl-3 col-sm-6  mx-auto my-5">
+            <div className=" service-div p-4">
               <div>
                 <div className="img">
                   <img

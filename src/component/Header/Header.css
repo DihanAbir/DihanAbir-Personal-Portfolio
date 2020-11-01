@@ -1,3 +1,6 @@
+.header-maindiv{
+    position: relative;
+}
 main{
     background-color: rgb(255, 255, 255);
     height: calc(100%);
@@ -15,38 +18,43 @@ header{
     padding: 0!important;
     display:flex
 }
-.nav-ul li{
+.home{
     padding: 25px 10px;
     transition: 0.3s ease-in-out;
 }
-.nav-ul li:first-child:hover {
-    background-color: rgb(12, 71, 160);
-  
-}
-.nav-ul li:first-child {
+.home {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-    background-color: rgb(8, 57, 131);
+    background-color: #796BF2;
   
 }
-.nav-ul li:first-child a{
-    color:rgb(248, 248, 248)!important;
+.home:hover {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #6252f7;
+    color: #fff!important;
   
 }
-.nav-ul li a{
-    color:rgb(41, 40, 39)!important;
+.nav-link-home{
+    color:rgb(255, 255, 255)!important;
+    
+
+}
+.nav-link{
     font-weight: 600;
     font-size: 18px;
     transition: 0.3s ease-in-out;
 }
-.nav-ul li a:hover{
-    color:rgb(230, 115, 7)!important;
+
+
+.nav-link:focus, .nav-link:hover{
+    color:rgb(0, 0, 0)!important;
     text-decoration: none;
 }
-.nav-ul li a:focus{
-    color:rgb(230, 115, 7)!important;
-    text-decoration: none;
-}
+
+
+
+/* social section   */
 .social-ul li{
     align-items:center;
     margin: 0 5px;
@@ -61,25 +69,32 @@ header{
 }
 .social-ul li:last-child:hover a{
     color:white!important;
-    background-color: rgb(18, 90, 199);
+    background-color: #6656f3;
     padding: 10px 25px;
     border-radius: 15px;
 }
 .hire-me{
     color:white!important;
-    background-color: rgb(18, 90, 199);
+    background-color: #796BF2;
     border-radius: 5px!important;
     
 }
 .hire-me:hover{
-    background-color: rgb(4, 41, 95)!important;
+    background-color:#6656f3!important;
     
+}
+.social-ul li{
+    padding-left: 10px;
+    transition: margin-top 0.5s ease-in-out
+}
+.social-ul li:hover{
+    margin-top: -5px;
 }
 .social-ul li a{
     color: black;
 }
 .social-ul li a:hover{
-    color: rgb(7, 119, 153);
+    color: #796BF2!important;
     text-decoration: none;
 }
 

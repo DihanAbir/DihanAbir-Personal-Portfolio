@@ -9,10 +9,14 @@ import {
 import About from "./component/About/About";
 import Portfolio from "./component/Portfolio/Portfolio";
 import Footer from "./component/Footer/Footer";
+import Particles from 'react-particles-js';
+
+import ParticlesBg from 'particles-bg';
 
 function App() {
   return (
     <div className='main-section'>
+      
       <Router>
         <Switch>
           <Route exact path="/">
@@ -32,7 +36,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      
+      <ParticlesBg style={{ position: "absolute" }}  type="random" bg={true} />
     </div>
   );
 }
