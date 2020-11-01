@@ -9,14 +9,33 @@ import {
 import About from "./component/About/About";
 import Portfolio from "./component/Portfolio/Portfolio";
 import Footer from "./component/Footer/Footer";
-import Particles from 'react-particles-js';
-
-import ParticlesBg from 'particles-bg';
+import { useEffect, useState } from "react";
 
 function App() {
+  const [scrollTop, setScrollTop] = useState(0);
+  const onscroll = () => {
+    const WinScroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight- document.documentElement.clientHeight;
+
+    const scrolled = (WinScroll / height) * 100;
+    setScrollTop(scrolled)
+  }
+
+
+  useEffect( () => {
+    window.addEventListener('scroll', onscroll)
+    return() => window.removeEventListener('scroll', onscroll)
+  }, []);
+
+
+
   return (
     <div className='main-section'>
-      
+      <div className='progressMainWrapper'>
+        <div className="progressMainStyle" style= {{ width: `${scrollTop}%` }}>
+
+        </div>
+      </div>
       <Router>
         <Switch>
           <Route exact path="/">
@@ -36,7 +55,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <ParticlesBg style={{ position: "absolute" }}  type="random" bg={true} />
     </div>
   );
 }
