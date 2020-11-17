@@ -3,40 +3,44 @@ import { Link } from 'react-router-dom';
 import profile from '../../image/profile.jpeg';
 import './Sidebar.css';
 import mypdf from '../../MD Nahid Murad Abir cv.pdf';
-import Typical from 'react-typical';
+import ReactTypingEffect from 'react-typing-effect';
 
 
 const Sidebar = () => {
     return (
         <div className= 'sidebar-maindiv'>
-            <h5>Md Nahid Murad Abir</h5>
-            <hr/>
-            <Typical
-                loop= {Infinity}
-                wrapper='b'
-                steps={[
-                    "Web Developer 💻",
-                    3000,
-                    "Web Designer💻",
-                    3000,
-                    "Open sourcer 🧶",
-                    3000,
-                    "Traveller ✈",
-                    3000,
-                    "Brother ",
-                ]}
-            />
+           
             <hr/>
             <div className="img">
                 <img className='img-fluid profile-picture' src={profile} alt="profile picture"/>
             </div>
             
             <div className='personal-information'>
-                <p> <span className="dot">o</span> Name: Md Nahid Murad Abir</p>
-                <p> <span className="dot">o</span> Birthday: 02 Februar 1998</p>
-                <p> <span className="dot">o</span> Job: Freelancer</p>
-                <p> <span className="dot">o</span> Email: nahid.muradabir@gmail.com</p>
-                <p> <span className="dot">o</span> LinkedIn: dihanabir</p>
+                <p> 
+                <ReactTypingEffect
+        text={["Hello From Abir!", "A Enthusiast Developer", 'A Front-end Developer', 'React lover', 'Technology philander']}
+        cursorRenderer={cursor => <h1 style={ { color: 'salmon'}}>{cursor}</h1>}
+        displayTextRenderer={(text, i) => {
+          return (
+            <h4>
+              {text.split('').map((char, i) => {
+                const key = `${i}`;
+                return (
+                  <span
+                    key={key}
+                    style={ { color: 'salmon'}}
+                  >{char}</span>
+                );
+              })}
+            </h4>
+          );
+        }}        
+      />
+                </p>
+                <p> <span className="dot">o</span> <b>Birthday</b> : 02 Februar 1998</p>
+                <p> <span className="dot">o</span> <b>Job</b> : Freelancer</p>
+                <p> <span className="dot">o</span> <b>Email</b> : nahid.muradabir@gmail.com</p>
+                <p> <span className="dot">o</span> <b>LinkedIn</b> : dihanabir</p>
             </div>
                 <button className='btn cv'><a href={mypdf} download="MD Nahid Murad Abir cv.pdf">Download CV</a></button>
         </div>

@@ -7,7 +7,7 @@ import "./LandingPage.css";
 const LandingPage = () => {
   return (
     <>
-      <div className="landing-app mx-auto">
+      <div className="landing-app  mx-auto">
         <div className="wrapper mx-auto">
           <div className="row mx-auto">
             <div className="col-xl-3 col-sm-12 col-sidebar">
@@ -17,9 +17,7 @@ const LandingPage = () => {
               <section>
                 <Header />
               </section>
-              <section className="mt-5">
-                <Footer />
-              </section>
+              
             </div>
           </div>
         </div>

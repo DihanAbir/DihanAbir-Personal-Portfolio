@@ -75,7 +75,7 @@ header{
 }
 .hire-me{
     color:white!important;
-    background-color: #796BF2;
+    background-color: rgb(247, 102, 86)!important;
     border-radius: 5px!important;
     
 }
@@ -87,9 +87,7 @@ header{
     padding-left: 10px;
     transition: margin-top 0.5s ease-in-out
 }
-.social-ul li:hover{
-    margin-top: -5px;
-}
+
 .social-ul li a{
     color: black;
 }

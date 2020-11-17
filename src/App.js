@@ -50,11 +50,16 @@ function App() {
           <Route path="/resume">
             <Resume />
           </Route>
-          <Route>
-            <Footer/>
-          </Route>
+          
+          {/* <Route path="/resume">
+            </>
+          </Route> */}
+          
         </Switch>
+     
+         
       </Router>
+            <Footer/>
     </div>
   );
 }

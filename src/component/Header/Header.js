@@ -23,6 +23,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 import Navbars from 'react-bootstrap/Navbar'
+import Contact from "../Contact/Contact";
 
 const Header = () => {
   return (
@@ -39,8 +40,8 @@ const Header = () => {
                           <Nav.Link className="nev-item home mx-2" > <Link className='nav-link nav-link-home' to="/"><FontAwesomeIcon icon={faHome} /></Link></Nav.Link>
                           <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/portfolio">Portfolio</Link></Nav.Link>
                           <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/blog">Blog</Link></Nav.Link>
-                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/contact-me">Contact Us</Link></Nav.Link>
-                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/resume">Resume</Link></Nav.Link>
+                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/contact-me">Chat with me?</Link></Nav.Link>
+                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/resume">Who Am I</Link></Nav.Link>
                         </Nav>
                     </Navbars.Collapse>
                     </Navbars>
@@ -91,6 +92,9 @@ const Header = () => {
             <Route exact path="/resume">
               <Resume />
             </Route>
+            <Route path="/contact-me">
+            <Contact/>
+          </Route>
           </Switch>
         </main>
       </Router>
