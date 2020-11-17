@@ -11,7 +11,7 @@ const Resume = () => {
   <div className="resume_right">
     <div className="resume_item resume_about">
         <div className="title">
-           <p className="bold">About us</p>
+           <p className="bold">Who Am I?</p>
          </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?</p>
     </div>

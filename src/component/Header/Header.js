@@ -50,24 +50,24 @@ const Header = () => {
           <div className="ml-auto">
             <ul className="social-ul">
               <li>
-                <Link to="/https://www.facebook.com/DihanAbir0">
+                <a target="_blank" href="https://www.facebook.com/DihanAbir0">
                   <FontAwesomeIcon icon={faFacebookF} />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/https://www.linkedin.com/in/dihanabir/">
+                <a target="_blank" href="https://www.linkedin.com/in/dihanabir/">
                   <FontAwesomeIcon icon={faLinkedinIn} />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/https://github.com/DihanAbir">
+                <a target="_blank" href="https://github.com/DihanAbir">
                   <FontAwesomeIcon icon={faGithub} />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/https://twitter.com/DihanAbir0">
+                <a target="_blank" href="https://twitter.com/DihanAbir0">
                   <FontAwesomeIcon icon={faTwitter} />
-                </Link>
+                </a>
               </li>
               <li>
                 <a className="hire-me" href="mailto:nahid.muradabir@gmail.com">
