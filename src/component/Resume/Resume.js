@@ -12,7 +12,7 @@ const Resume = () => {
               <div className="title">
                 <h4 className="bold">Who Am I?</h4>
               </div>
-              <p>
+              <p className="about-me">
                 A junior web developer who enthusiast the development of a
                 website. I have a 1-year working experience and I have completed
                 several web project. I always tried to find real-life problems
@@ -28,23 +28,19 @@ const Resume = () => {
               </div>
               <ul>
                 <li>
-                  <div className="date">2016 - 2018</div>
+                  <div className="date">2016 - 2021</div>
                   <div className="info">
-                    <p className="semi-bold">Lorem ipsum dolor sit amet.</p>
+                    <p className="semi-bold">Student</p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nostrum, voluptatibus!
+                      B.Sc in Computer Science and Technology
                     </p>
                   </div>
                 </li>
                 <li>
-                  <div className="date">2015 - 2017</div>
+                  <div className="date">2019-2020</div>
                   <div className="info">
-                    <p className="semi-bold">Lorem ipsum dolor sit amet.</p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nostrum, voluptatibus!
-                    </p>
+                    <p className="semi-bold">Shikhbe Shobai</p>
+                    <p>Web design and Wordpress Development <span>Wordpress Development Wordpress Development</span></p>
                   </div>
                 </li>
                 {/* <li>
@@ -71,7 +67,7 @@ const Resume = () => {
                       SSC & HSC 
                     </p>
                     <p>
-                      Academic School and College studies was completed from Dhaka Bangladesh!
+                      My Academic School (2014) and College (2016) studies was completed from Dhaka Bangladesh!
                     </p>
                   </div>
                 </li>
@@ -87,9 +83,9 @@ const Resume = () => {
               </ul>
             </div>
             <div className="resume_item resume_hobby">
-              <div className="title">
+              {/* <div className="title">
                 <p className="bold">Hobby</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

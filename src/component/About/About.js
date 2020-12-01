@@ -6,6 +6,10 @@ import project3 from "../../image/illustration.PNG";
 import project4 from "../../image/fast-delivary.PNG";
 import Typical from 'react-typical';
 
+import { useSpring, animated } from "react-spring";
+
+
+
 const About = () => {
   const Projects = [
     {
@@ -37,18 +41,17 @@ const About = () => {
   return (
     <div className='container mx-auto'>
       <h4 className="border-custome">About Me</h4>
-      {/* <p className="m-5"> */}
-       
-        <Typical
-                loop= {Infinity}
-                wrapper='p'
-                steps={[
-                    "  Started earnest brother believe an exposed so. Me he believing daughter ",
-                    3000,
-                    
-                ]}
-            />
-      {/* </p> */}
+     <h3 className="gray">Hello! This is Md Nahid Murad Abir.</h3><br/>
+
+
+    <p className="about-me">
+    I am currently working with Full-stack web applications. I enjoy developing complex Web applications using modern tools and technologies including <b>JavaScript</b> , <b>React</b>, <b>Node.js</b>, <b>Express.js</b>, <b>WordPress</b> and writing complex Database structure using <b>MongoDB</b> to represent various ways to solve business problems.<br/>
+    My goal is to build pixel-perfect, components based and practical projects which provide a rich user experience with real world application.<br/>
+    When not in front of a computer, you will probably find me reading 📚, hangout with 👨‍👩‍👦‍👦 and try to blogging 👨‍💻.
+    </p>
+
+
+
       <h4 className="border-custome">My Services</h4>
       <div className="row container ">
         {Projects.map((project) => (
@@ -67,7 +70,7 @@ const About = () => {
                 <div className="description mt-4">
                   <h6>{project.title}</h6>
                   <p className="service-description">{project.description}</p>
-                  <div className="d-flex justify-content-around"></div>
+                  {/* <div className="d-flex justify-content-around"></div> */}
                 </div>
               </div>
             </div>

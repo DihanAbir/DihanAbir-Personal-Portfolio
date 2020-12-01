@@ -34,7 +34,7 @@ p{
     background: rgba(243, 148, 138, 0.856);
   }
 .progressMainWrapper{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
     height: 1px;
     position:sticky;
     top: 0;

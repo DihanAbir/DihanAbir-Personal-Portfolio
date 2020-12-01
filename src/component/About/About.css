@@ -4,6 +4,15 @@
 .service{
     height: 100px;
 }
+.about-me{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gray{
+    color: rgb(61, 61, 61);
+}
+b{
+    color: #786bf2;
+}
 .service-div{
     border: 1px solid #786bf257;
     border-radius: 5px;
@@ -20,6 +29,6 @@
 }
 
 .service-description{
-    font-size: 14px;
+    font-size: 12px!important;
     color: #666;
 }

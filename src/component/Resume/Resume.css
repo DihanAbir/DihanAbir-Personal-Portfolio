@@ -78,6 +78,9 @@
     margin-bottom: 10px;
     align-items: center;
   }
+  span{
+    opacity: 0;
+  }
   
   .resume .resume_left ul li:last-child {
     margin-bottom: 0;

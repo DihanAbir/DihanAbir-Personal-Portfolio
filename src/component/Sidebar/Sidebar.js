@@ -8,32 +8,22 @@ import ReactTypingEffect from "react-typing-effect";
 
 
 
-const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 20,
-  (x - window.innerWidth / 2) / 20,
-  1.1,
-];
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+const calc = (x, y) => [-(y - window.innerHeight / 4) / 40, (x - window.innerWidth / 5) / 40, 1];
+const trans = (x, y, s) => `perspective(400px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const Sidebar = () => {
-  const [props, set] = useSpring(() => ({
-    xys: [0, 0, 1],
-    config: { mass: 5, tension: 350, friction: 40 },
-  }));
+  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
+
+
   return (
     <div className="sidebar-maindiv">
       <hr />
       <div className="img">
-        {/* <img
-          className="img-fluid profile-picture"
-          src={profile}
-          alt="profile picture"
-        /> */}
+        
         <animated.div
           class="card"
           onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-          onMouseLeave={() => set({ xys: [0, 0, 1] })}
+          onMouseLeave={() => set({ xys: [1, 0, 1] })}
           style={{ transform: props.xys.interpolate(trans) }}
         />
       </div>
@@ -43,8 +33,8 @@ const Sidebar = () => {
           <ReactTypingEffect
             text={[
               "Hello From Abir!",
-              "A Enthusiast Developer",
-              "A Front-end Developer",
+              "Enthusiast Developer",
+              "A Front-End Developer",
               "React lover",
               "Technology philander",
             ]}
