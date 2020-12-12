@@ -23,10 +23,10 @@
     text-decoration: none;
 }
 .btn{
-    background-color: rgb(247, 84, 66)!important;
+    background-color: rgba(243, 149, 138, 0.973)!important;
 }
 .btn:hover{
-    background-color: #604ff3!important;
+    background-color: #7263fa!important;
 }
 .btn a{
     font-size: 18px;

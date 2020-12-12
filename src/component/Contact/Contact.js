@@ -12,8 +12,8 @@ const Contact = () => {
                     <input type="text" name="email" className="form-control" /> <br />
                     <label forhtml="comment" className="text-light">Comment</label>
                     <textarea type="text-box" name="message" rows="10" className="form-control" /> <br /> <br />
-                    <input type="submit" value="Send" className="btn pr-5 pl-5" style={{ boxShadow: '7px 7px 105px white' }} />
-                    <input type="reset" value="Reset" className="btn  ml-5 pr-5 pl-5" style={{ boxShadow: '7px 7px 105px white' }} />
+                    <input type="submit" value="Send" className="text-white btn pr-5 pl-5" style={{ boxShadow: '7px 7px 105px white' }} />
+                    <input type="reset" value="Reset" className="text-white btn  ml-5 pr-5 pl-5" style={{ boxShadow: '7px 7px 105px white' }} />
                 </form >
             </div>
 

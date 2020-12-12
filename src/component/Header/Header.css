@@ -67,15 +67,18 @@ header{
     font-size: 18px;
     transition: 0.3s ease-in-out;
 }
+
+
+
 .social-ul li:last-child:hover a{
     color:white!important;
-    background-color: #6656f3;
+    background-color: #7263fa!important;
     padding: 10px 25px;
     border-radius: 15px;
 }
 .hire-me{
     color:white!important;
-    background-color: rgb(247, 102, 86)!important;
+    background-color: rgba(243, 149, 138, 0.973)!important;
     border-radius: 5px!important;
     
 }

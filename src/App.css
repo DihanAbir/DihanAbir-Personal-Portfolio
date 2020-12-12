@@ -1,5 +1,6 @@
 *{
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: initializ;
     /* font-family: 'Julius Sans One', sans-serif; */
 }
 p{
@@ -11,7 +12,7 @@ p{
     min-height: 200vh;
 }
 .border-custome{
-    border-bottom: 10px  solid #9a91f0c7!important;
+    border-bottom: 4px solid rgb(178 170 255)!important;
     display: inline-block;
 }
 ::-webkit-scrollbar{
@@ -33,6 +34,11 @@ p{
     color: white;
     background: rgba(243, 148, 138, 0.856);
   }
+  .primary-color{
+      color: rgba(243, 149, 138, 0.973);
+  }
+
+
 .progressMainWrapper{
     background-color: rgb(255, 255, 255);
     height: 1px;
@@ -46,4 +52,8 @@ p{
 .progressMainStyle{
 height: 6px;
 background-color: salmon;
+}
+.section-title{
+    font-family: fantasy;
+    color: gray;
 }

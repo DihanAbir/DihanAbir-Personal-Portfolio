@@ -41,7 +41,7 @@ const About = () => {
   return (
     <div className='container mx-auto'>
       <h4 className="border-custome">About Me</h4>
-     <h3 className="gray">Hello! This is Md Nahid Murad Abir.</h3><br/>
+     <h3 className="gray">Hello! This is <spam className="primary-color"> Md Nahid Murad Abir.</spam> </h3><br/>
 
 
     <p className="about-me">
@@ -52,7 +52,7 @@ const About = () => {
 
 
 
-      <h4 className="border-custome">My Services</h4>
+      <h4 className="border-custome section-title">My Services</h4>
       <div className="row container ">
         {Projects.map((project) => (
           <div className="col-xl-3 col-sm-6  mx-auto my-5">

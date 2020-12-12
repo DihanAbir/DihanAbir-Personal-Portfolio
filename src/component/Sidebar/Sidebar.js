@@ -29,7 +29,7 @@ const Sidebar = () => {
       </div>
 
       <div className="personal-information">
-        <p>
+        <p>fdfd
           <ReactTypingEffect
             text={[
               "Hello From Abir!",
@@ -37,9 +37,13 @@ const Sidebar = () => {
               "A Front-End Developer",
               "React lover",
               "Technology philander",
+              "React lover",
+              "Technology philander",
+              "React lover",
+              "Technology philander",
             ]}
             cursorRenderer={(cursor) => (
-              <h1 style={{ color: "salmon" }}>{cursor}</h1>
+              <h1 style={{ color: "black" }}>{cursor}</h1>
             )}
             displayTextRenderer={(text, i) => {
               return (

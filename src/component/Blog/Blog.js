@@ -31,7 +31,7 @@ const Blog = () => {
                         <a target="_blank" href='https://nahid-muradabir.medium.com/start-a-new-journey-with-javascript-7a4e28761d46'>
                             <img className="img-fluid" src={JavaScript} alt="blog 1"/>
                         </a>
-                        <p>Introduction With React</p>
+                        <p>Introduction With JavaScript</p>
                     </div>
                 </div>
                 <div className="col-4">
