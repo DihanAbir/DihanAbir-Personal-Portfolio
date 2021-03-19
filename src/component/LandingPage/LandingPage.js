@@ -10,10 +10,11 @@ const LandingPage = () => {
       <div className="landing-app  mx-auto">
         <div className="wrapper mx-auto">
           <div className="row mx-auto">
-            <div className="col-xl-3 col-sm-12 col-sidebar">
+            {/* <div className="col-xl-3 col-sm-12 col-sidebar">
               <Sidebar />
-            </div>
-            <div className="col-xl-9 col-sm-12 col-description">
+            </div> */}
+            {/* <div className="col-xl-9 col-sm-12 col-description"> */}
+            <div className=" col-description">
               <section>
                 <Header />
               </section>
