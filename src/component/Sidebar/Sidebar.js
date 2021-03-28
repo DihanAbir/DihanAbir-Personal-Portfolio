@@ -6,20 +6,24 @@ import "./Sidebar.css";
 import mypdf from "../../MD Nahid Murad Abir cv.pdf";
 import ReactTypingEffect from "react-typing-effect";
 
-
-
-const calc = (x, y) => [-(y - window.innerHeight / 4) / 40, (x - window.innerWidth / 5) / 40, 1];
-const trans = (x, y, s) => `perspective(400px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const calc = (x, y) => [
+  -(y - window.innerHeight / 4) / 40,
+  (x - window.innerWidth / 5) / 40,
+  1,
+];
+const trans = (x, y, s) =>
+  `perspective(400px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Sidebar = () => {
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
-
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 },
+  }));
 
   return (
     <div className="sidebar-maindiv">
       <hr />
       <div className="img">
-        
         <animated.div
           class="card"
           onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
@@ -29,7 +33,7 @@ const Sidebar = () => {
       </div>
 
       <div className="personal-information">
-        <p>fdfd
+        <p>
           <ReactTypingEffect
             text={[
               "Hello From Abir!",
@@ -62,21 +66,16 @@ const Sidebar = () => {
           />
         </p>
         <p>
-          {" "}
-          <span className="dot">o</span> <b>Birthday</b> : 02 Februar 1998
+          <b>Birthday</b> : 02 Februar 1998
         </p>
         <p>
-          {" "}
-          <span className="dot">o</span> <b>Job</b> : Freelancer
+          <b>Job</b> : Freelancer
         </p>
         <p>
-          {" "}
-          <span className="dot">o</span> <b>Email</b> :
-          nahid.muradabir@gmail.com
+          <b>Email</b>: nahid.muradabir
         </p>
         <p>
-          {" "}
-          <span className="dot">o</span> <b>LinkedIn</b> : dihanabir
+          <b>LinkedIn</b> : dihanabir
         </p>
       </div>
       <button className="btn cv">

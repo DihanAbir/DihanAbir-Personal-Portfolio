@@ -38,7 +38,7 @@ const About = () => {
     <div className="container mx-auto">
       <div className="row">
         <div className="col-xl-3 col-sm-12">
-          <Sidebar/>
+          <Sidebar />
         </div>
         <div className="col-xl-9 col-sm-12">
           <h4 className="border-custome mb-4  section-title">About Me</h4>
@@ -60,8 +60,8 @@ const About = () => {
             projects which provide a rich user experience with real world
             application.
             <br />
-            When not in front of a computer, you will probably find me reading
-            📚, hangout with 👨‍👩‍👦‍👦 and try to blogging 👨‍💻.
+            When not in front of a computer, you will probably find me reading ,
+            hangout with *<b>Family</b>* and try to blogging .
           </p>
 
           <h4 className="border-custome section-title">My Services</h4>

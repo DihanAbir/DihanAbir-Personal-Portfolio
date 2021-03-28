@@ -4,13 +4,14 @@
 .service{
     height: 100px;
 }
-.about-me{
+.about-me {
+    font-size: 34px;
     font-family: initial;
     line-height: 33px;
     padding: 20px 0px;
-    word-spacing: 4px;
+    word-spacing: 3px;
     letter-spacing: 1.1px;
-}
+} 
 .gray{
     color: #000000;
     font-size: 25px;

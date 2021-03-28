@@ -9,7 +9,7 @@ import {
   useParams,
 } from "react-router-dom";
 
-import { Nav } from 'react-bootstrap';
+import { Nav } from "react-bootstrap";
 import Portfolio from "../Portfolio/Portfolio";
 import Resume from "../Resume/Resume";
 import AllPortfolio from "../AllPortfolio/AllPortfolio";
@@ -22,7 +22,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-import Navbars from 'react-bootstrap/Navbar'
+import Navbars from "react-bootstrap/Navbar";
 import Contact from "../Contact/Contact";
 
 const Header = () => {
@@ -31,20 +31,42 @@ const Header = () => {
       <Router>
         <header className="d-flex">
           {/* header right section   */}
-          
+
           <Navbars expand="lg">
-                    
-                    <Navbars.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbars.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto">
-                          <Nav.Link className="nev-item home mx-2" > <Link className='nav-link nav-link-home' to="/"><FontAwesomeIcon icon={faHome} /></Link></Nav.Link>
-                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/portfolio">Portfolio</Link></Nav.Link>
-                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/blog">Blog</Link></Nav.Link>
-                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/contact-me">Chat with me?</Link></Nav.Link>
-                          <Nav.Link className="nev-item mx-2" ><Link className='nav-link' to="/resume">Who Am I</Link></Nav.Link>
-                        </Nav>
-                    </Navbars.Collapse>
-                    </Navbars>
+            <Navbars.Toggle aria-controls="basic-navbar-nav" />
+            <Navbars.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link className="nev-item home mx-2">
+                  <Link className="nav-link nav-link-home" to="/">
+                    <FontAwesomeIcon
+                      style={{ color: "white", backgroundColor: "transparent" }}
+                      icon={faHome}
+                    />
+                  </Link>
+                </Nav.Link>
+                <Nav.Link className="nev-item mx-2">
+                  <Link className="nav-link" to="/portfolio">
+                    Portfolio
+                  </Link>
+                </Nav.Link>
+                <Nav.Link className="nev-item mx-2">
+                  <Link className="nav-link" to="/blog">
+                    Blog
+                  </Link>
+                </Nav.Link>
+                <Nav.Link className="nev-item mx-2">
+                  <Link className="nav-link" to="/contact-me">
+                    Chat with me?
+                  </Link>
+                </Nav.Link>
+                <Nav.Link className="nev-item mx-2">
+                  <Link className="nav-link" to="/resume">
+                    Who Am I
+                  </Link>
+                </Nav.Link>
+              </Nav>
+            </Navbars.Collapse>
+          </Navbars>
 
           {/* header left section  */}
           <div className="ml-auto">
@@ -55,7 +77,10 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.linkedin.com/in/dihanabir/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/dihanabir/"
+                >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
@@ -93,8 +118,8 @@ const Header = () => {
               <Resume />
             </Route>
             <Route path="/contact-me">
-            <Contact/>
-          </Route>
+              <Contact />
+            </Route>
           </Switch>
         </main>
       </Router>

@@ -18,7 +18,6 @@ const LandingPage = () => {
               <section>
                 <Header />
               </section>
-              
             </div>
           </div>
         </div>
